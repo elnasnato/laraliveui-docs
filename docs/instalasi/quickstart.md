@@ -11,7 +11,7 @@ Mulai menggunakan LaraLiveUI dalam 5 menit.
 Untuk proyek Laravel yang sudah ada:
 
 ```bash
-composer require laralive/laraliveui
+composer require elnasnato/laraliveui
 ```
 
 Tambahkan di layout:
@@ -28,7 +28,7 @@ Import CSS:
 
 ```css
 @import 'tailwindcss';
-@import '../../vendor/laralive/laraliveui/dist/laraliveui.css';
+@import '../../vendor/elnasnato/laraliveui/dist/laraliveui.css';
 ```
 
 Gunakan komponen:

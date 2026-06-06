@@ -9,7 +9,7 @@ Memasang LaraLiveUI ke proyek Laravel yang sudah ada.
 ## 1. Install via Composer
 
 ```bash
-composer require laralive/laraliveui
+composer require elnasnato/laraliveui
 ```
 
 ## 2. Tambahkan Blade Directives
@@ -38,7 +38,7 @@ Di `resources/css/app.css`:
 
 ```css
 @import 'tailwindcss';
-@import '../../vendor/laralive/laraliveui/dist/laraliveui.css';
+@import '../../vendor/elnasnato/laraliveui/dist/laraliveui.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 ```

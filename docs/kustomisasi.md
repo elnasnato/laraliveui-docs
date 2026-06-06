@@ -51,7 +51,7 @@ Tambahkan gaya kustom di `resources/css/app.css` setelah import LaraLiveUI:
 
 ```css
 @import 'tailwindcss';
-@import '../../vendor/laralive/laraliveui/dist/laraliveui.css';
+@import '../../vendor/elnasnato/laraliveui/dist/laraliveui.css';
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Kustomisasi Anda */
