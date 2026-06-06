@@ -1,12 +1,12 @@
 ---
-sidebar_position: 6
+sidebar_position: 38
 ---
 
 # Layout
 
-Komponen layout untuk struktur halaman.
+Komponen layout untuk struktur halaman yang konsisten.
 
-## Layout
+## Layout Dasar
 
 ```blade
 <laraliveui:layout>
@@ -33,26 +33,73 @@ Komponen layout untuk struktur halaman.
 </laraliveui:layout>
 ```
 
-## Card
+## Sidebar
+
+Sidebar yang responsif dengan berbagai sub-komponen:
 
 ```blade
-<laraliveui:card>
-    <laraliveui:card.header>
-        <laraliveui:card.title>Judul Card</laraliveui:card.title>
-        <laraliveui:card.description>Deskripsi card</laraliveui:card.description>
-    </laraliveui:card.header>
-    <laraliveui:card.content>
-        Konten card
-    </laraliveui:card.content>
-    <laraliveui:card.footer>
-        <laraliveui:button variant="primary">Simpan</laraliveui:button>
-    </laraliveui:card.footer>
-</laraliveui:card>
+<laraliveui:sidebar>
+    <laraliveui:sidebar.brand>My App</laraliveui:sidebar.brand>
+    <laraliveui:sidebar.search />
+    <laraliveui:sidebar.nav>
+        <laraliveui:sidebar.item href="/" icon="home">Dashboard</laraliveui:sidebar.item>
+    </laraliveui:sidebar.nav>
+    <laraliveui:sidebar.group heading="Pengaturan">
+        <laraliveui:sidebar.item href="/settings" icon="cog-6-tooth">Settings</laraliveui:sidebar.item>
+    </laraliveui:sidebar.group>
+    <laraliveui:sidebar.spacer />
+    <laraliveui:sidebar.profile />
+    <laraliveui:sidebar.collapse />
+    <laraliveui:sidebar.toggle />
+</laraliveui:sidebar>
 ```
 
-## Separator
+## Spacer
 
 ```blade
-<laraliveui:separator />
-<laraliveui:separator label="Atau" />
+<laraliveui:spacer />
 ```
+
+Gunakan untuk mendorong konten ke kanan dalam flex container:
+
+```blade
+<div class="flex">
+    <laraliveui:heading>Judul</laraliveui:heading>
+    <laraliveui:spacer />
+    <laraliveui:button variant="primary">Simpan</laraliveui:button>
+</div>
+```
+
+## Container
+
+```blade
+<laraliveui:container>
+    Konten dengan max-width yang terbatas.
+</laraliveui:container>
+```
+
+## Aside
+
+```blade
+<laraliveui:aside>
+    Konten sidebar tambahan.
+</laraliveui:aside>
+```
+
+## Referensi
+
+### `laraliveui:sidebar`
+
+| Sub-komponen | Deskripsi |
+|-------------|-----------|
+| `sidebar.brand` | Brand/logo |
+| `sidebar.nav` | Navigasi sidebar |
+| `sidebar.item` | Item navigasi dengan `href`, `icon`, `active` |
+| `sidebar.group` | Group item dengan `heading` |
+| `sidebar.search` | Pencarian sidebar |
+| `sidebar.profile` | Profil pengguna |
+| `sidebar.collapse` | Tombol collapse |
+| `sidebar.toggle` | Tombol toggle (mobile) |
+| `sidebar.spacer` | Spacer fleksibel |
+| `sidebar.header` | Header khusus sidebar |
+| `sidebar.backdrop` | Backdrop untuk mobile |

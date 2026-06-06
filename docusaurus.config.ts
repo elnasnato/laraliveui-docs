@@ -103,7 +103,7 @@ const config: Config = {
             },
             {
               label: 'Komponen',
-              to: '/docs/komponen/overview',
+              to: '/docs/komponen/button',
             },
           ],
         },
