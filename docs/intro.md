@@ -23,7 +23,7 @@ slug: /intro
 | Metode | Deskripsi |
 |--------|-----------|
 | **[Library](instalasi/library)** | Install ke proyek Laravel yang sudah ada: `composer require elnasnato/laraliveui` |
-| **[Starter Kit](instalasi/starter-kit)** | Buat proyek baru: `composer create-project elnasnato/laraliveui-starter-kit` |
+| **[Starter Kit](instalasi/starter-kit)** | Buat proyek baru: `laravel new app --using=elnasnato/laraliveui-starter-kit` |
 
 ## Persyaratan Sistem
 

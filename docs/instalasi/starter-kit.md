@@ -8,6 +8,15 @@ Membuat proyek Laravel baru dengan LaraLiveUI terpasang dan siap pakai.
 
 ## 1. Buat Proyek Baru
 
+Gunakan perintah `laravel new` (direkomendasikan):
+
+```bash
+laravel new app --using=elnasnato/laraliveui-starter-kit
+cd app
+```
+
+Atau dengan `composer create-project`:
+
 ```bash
 composer create-project elnasnato/laraliveui-starter-kit my-project
 cd my-project

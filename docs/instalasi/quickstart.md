@@ -41,11 +41,21 @@ Gunakan komponen:
 
 ## Starter Kit
 
-Untuk proyek baru:
+Untuk proyek baru (direkomendasikan):
 
 ```bash
-composer create-project elnasnato/laraliveui-starter-kit my-project
-cd my-project
+laravel new app --using=elnasnato/laraliveui-starter-kit
+cd app
+php artisan install:features
+npm install && npm run build
+php artisan serve
+```
+
+Atau dengan `composer`:
+
+```bash
+composer create-project elnasnato/laraliveui-starter-kit app
+cd app
 php artisan install:features
 npm install && npm run build
 php artisan serve
