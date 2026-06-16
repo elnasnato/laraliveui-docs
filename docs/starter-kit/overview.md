@@ -21,14 +21,16 @@ sidebar_position: 1
 
 | Komponen | Teknologi |
 |----------|-----------|
-| **Framework** | Laravel 13.x |
+| **Framework** | Laravel ^13.0 |
 | **UI Library** | LaraLiveUI |
-| **Livewire** | Livewire 4.x |
+| **Livewire** | Livewire ^4.0 |
+| **PHP** | ^8.4 |
 | **CSS** | Tailwind CSS v4 |
 | **Auth** | Laravel Fortify |
 | **Passkeys** | @laravel/passkeys |
 | **Database** | SQLite (default) |
 | **Build Tool** | Vite |
+| **Node.js** | ^24.0 |
 
 ## Memulai
 

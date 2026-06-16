@@ -5,13 +5,13 @@ slug: /intro
 
 # Pengenalan LaraLiveUI
 
-**LaraLiveUI** adalah library komponen UI untuk aplikasi **Laravel Livewire** yang dibangun dengan **Tailwind CSS v4**. Menyediakan 40+ komponen gratis dan open-source untuk mempercepat pengembangan antarmuka pengguna.
+**LaraLiveUI** adalah library komponen UI untuk aplikasi **Laravel Livewire** yang dibangun dengan **Tailwind CSS v4**. Menyediakan 50+ komponen gratis dan open-source untuk mempercepat pengembangan antarmuka pengguna.
 
 ## Fitur Utama
 
-- **40+ Komponen Gratis** — Accordion, Button, Modal, Table, Dropdown, Date Picker, dan banyak lagi
+- **50+ Komponen Gratis** — Accordion, Button, Modal, Table, Dropdown, Date Picker, dan banyak lagi
 - **Tailwind CSS v4** — Komponen modern dengan utility-first CSS
-- **Livewire Native** — Terintegrasi penuh dengan Livewire v3/v4
+- **Livewire Native** — Terintegrasi penuh dengan Livewire v4
 - **Heroicons** — 300+ ikon SVG siap pakai
 - **Dark Mode** — Dukungan tema gelap bawaan
 - **Custom Tag Compiler** — Gunakan sintaks `<laraliveui:button>` di Blade
@@ -27,11 +27,11 @@ slug: /intro
 
 ## Persyaratan Sistem
 
-- PHP ^8.1
-- Laravel ^10.0
-- Livewire ^3.7.4
+- PHP ^8.4
+- Laravel ^13.0
+- Livewire ^4.0
 - Tailwind CSS ^4.0
-- Node.js (untuk build assets)
+- Node.js ^24.0 (untuk build assets)
 
 ## Tautan Penting
 
