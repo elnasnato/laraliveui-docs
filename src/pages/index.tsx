@@ -39,8 +39,8 @@ function Feature({title, description}: {title: string; description: string}) {
 
 const features = [
   {
-    title: '40+ Komponen Gratis',
-    description: 'Button, Modal, Table, Dropdown, Date Picker, dan banyak lagi komponen siap pakai untuk aplikasi Livewire Anda.',
+    title: '50+ Komponen Gratis',
+    description: 'Button, Modal, Table, Dropdown, Date Picker, Combobox, Wizard, dan banyak lagi komponen siap pakai untuk aplikasi Livewire Anda.',
   },
   {
     title: 'Tailwind CSS v4',
