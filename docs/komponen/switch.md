@@ -12,8 +12,6 @@ Toggle switch untuk mengaktifkan/menonaktifkan pengaturan.
 
 ## Ukuran
 
-Small Default Large
-
 ```blade
 <laraliveui:switch name="opsi" label="Small" size="sm" />
 <laraliveui:switch name="opsi" label="Default" size="base" />
@@ -54,8 +52,8 @@ Small Default Large
 | Prop | Deskripsi | Default |
 |------|-----------|---------|
 | `name` | Nama field | `wire:model` pertama |
-| `label` | Teks label | — |
-| `description` | Teks deskripsi | — |
+| `label` | Teks label | `null` |
+| `description` | Teks deskripsi | `null` |
 | `size` | Ukuran: `sm`, `base`, `lg` | `base` |
 | `checked` | Status checked | `false` |
 | `disabled` | Nonaktifkan switch | `false` |

@@ -8,15 +8,42 @@ Komponen avatar untuk foto profil atau inisial.
 
 ```blade
 <laraliveui:avatar src="/img/photo.jpg" alt="Foto Profil" />
-<laraliveui:avatar initials="JD" />
+<laraliveui:avatar name="John Doe" />
+<laraliveui:avatar icon="user" />
 ```
 
 ## Ukuran
 
 ```blade
+<laraliveui:avatar src="/img/photo.jpg" size="xs" />
 <laraliveui:avatar src="/img/photo.jpg" size="sm" />
-<laraliveui:avatar src="/img/photo.jpg" size="base" />
+<laraliveui:avatar src="/img/photo.jpg" size="md" />
 <laraliveui:avatar src="/img/photo.jpg" size="lg" />
+<laraliveui:avatar src="/img/photo.jpg" size="xl" />
+```
+
+## Circle
+
+```blade
+<laraliveui:avatar src="/img/photo.jpg" circle />
+```
+
+## Warna Otomatis
+
+```blade
+<laraliveui:avatar name="John Doe" color="auto" />
+```
+
+## Badge
+
+```blade
+<laraliveui:avatar src="/img/photo.jpg" badge="3" />
+```
+
+## Tooltip
+
+```blade
+<laraliveui:avatar src="/img/photo.jpg" name="John Doe" tooltip />
 ```
 
 ## Avatar Group
@@ -34,13 +61,19 @@ Komponen avatar untuk foto profil atau inisial.
 
 ### `laraliveui:avatar`
 
-| Prop | Deskripsi |
-|------|-----------|
-| `src` | URL gambar |
-| `alt` | Teks alternatif |
-| `initials` | Inisial (jika tanpa gambar) |
-| `size` | Ukuran: `sm`, `base`, `lg` |
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `src` | URL gambar | `null` |
+| `alt` | Teks alternatif | `null` |
+| `name` | Nama (untuk inisial otomatis) | `null` |
+| `initials` | Inisial (jika tanpa gambar) | `null` |
+| `icon` | Ikon fallback | `user` |
+| `size` | Ukuran: `xs`, `sm`, `md`, `lg`, `xl` | `md` |
+| `color` | Warna background atau `auto` | `null` |
+| `circle` | Bentuk lingkaran penuh | `null` |
+| `badge` | Teks badge | `null` |
+| `tooltip` | Tampilkan tooltip dengan nama | `null` |
 
 ### `laraliveui:avatar.group`
 
-Group avatar yang tumpang tindih.
+Group avatar yang tumpang tindih. Tidak memiliki props.

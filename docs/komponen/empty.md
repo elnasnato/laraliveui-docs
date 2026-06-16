@@ -31,17 +31,9 @@ Komponen state kosong untuk menampilkan pesan ketika tidak ada data.
     description="Tambahkan pengguna pertama Anda untuk memulai."
     icon="users"
 >
-    <laraliveui:slot name="action">
+    <x-slot:action>
         <laraliveui:button variant="primary">Tambah Pengguna</laraliveui:button>
-    </laraliveui:slot>
-</laraliveui:empty>
-```
-
-## Custom Content
-
-```blade
-<laraliveui:empty icon="inbox">
-    <p class="text-sm text-zinc-500">Custom konten di sini</p>
+    </x-slot:action>
 </laraliveui:empty>
 ```
 
@@ -51,7 +43,11 @@ Komponen state kosong untuk menampilkan pesan ketika tidak ada data.
 
 | Prop | Deskripsi |
 |------|-----------|
+| `icon` | Nama ikon |
 | `title` | Judul state kosong |
 | `description` | Deskripsi state kosong |
-| `action` | Slot untuk tombol aksi |
-| `icon` | Nama ikon yang ditampilkan |
+
+| Slot | Deskripsi |
+|------|-----------|
+| default | Konten kustom |
+| `action` | Tombol aksi |

@@ -10,23 +10,6 @@ Komponen input dengan pencarian dan saran otomatis dalam dropdown.
 <laraliveui:combobox name="user_id" wire:model="user">
     <laraliveui:combobox.option value="1" label="John Doe" />
     <laraliveui:combobox.option value="2" label="Jane Smith" />
-    <laraliveui:combobox.option value="3" label="Bob Johnson" />
-</laraliveui:combobox>
-```
-
-## Placeholder
-
-```blade
-<laraliveui:combobox name="user_id" placeholder="Pilih pengguna...">
-    <laraliveui:combobox.option value="1" label="John" />
-</laraliveui:combobox>
-```
-
-## Search Placeholder
-
-```blade
-<laraliveui:combobox name="user_id" search-placeholder="Cari pengguna...">
-    <laraliveui:combobox.option value="1" label="John" />
 </laraliveui:combobox>
 ```
 
@@ -46,18 +29,10 @@ Komponen input dengan pencarian dan saran otomatis dalam dropdown.
 </laraliveui:combobox>
 ```
 
-## Error State
+## Size
 
 ```blade
-<laraliveui:combobox name="user_id" invalid>
-    <laraliveui:combobox.option value="1" label="John" />
-</laraliveui:combobox>
-```
-
-## Empty Text
-
-```blade
-<laraliveui:combobox name="user_id" empty-text="Tidak ada hasil.">
+<laraliveui:combobox name="user_id" size="sm">
     <laraliveui:combobox.option value="1" label="John" />
 </laraliveui:combobox>
 ```
@@ -73,7 +48,7 @@ Komponen input dengan pencarian dan saran otomatis dalam dropdown.
 | `search-placeholder` | Placeholder input pencarian | `Search...` |
 | `empty-text` | Teks saat tidak ada hasil | `No results found.` |
 | `invalid` | Tampilkan state error | `null` |
-| `size` | Ukuran: `base`, `sm`, `xs` | — |
+| `size` | Ukuran: `base`, `sm`, `xs` | `null` |
 | `clearable` | Tampilkan tombol hapus | `false` |
 | `position` | Posisi dropdown: `bottom`, `top` | `bottom` |
 
@@ -83,4 +58,3 @@ Komponen input dengan pencarian dan saran otomatis dalam dropdown.
 |------|-----------|
 | `value` | Nilai opsi |
 | `label` | Label opsi (fallback ke slot) |
-| `disabled` | Nonaktifkan opsi |

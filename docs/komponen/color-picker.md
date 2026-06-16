@@ -15,7 +15,7 @@ Pemilih warna.
 
 ### `laraliveui:color-picker`
 
-| Prop | Deskripsi |
-|------|-----------|
-| `name` | Nama field |
-| `value` | Nilai default |
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `name` | Nama field | — |
+| `value` | Nilai default | `#000000` |

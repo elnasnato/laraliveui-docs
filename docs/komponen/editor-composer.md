@@ -25,14 +25,15 @@ Composer untuk menulis konten dengan formatting:
 
 ### `laraliveui:editor`
 
-| Prop | Deskripsi |
-|------|-----------|
-| `name` | Nama field |
-| `placeholder` | Placeholder text |
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `name` | Nama field | — |
+| `value` | Nilai default | `` |
+| `placeholder` | Placeholder text | `Write something...` |
 
 ### `laraliveui:composer`
 
-| Prop | Deskripsi |
-|------|-----------|
-| `name` | Nama field |
-| `placeholder` | Placeholder text |
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `name` | Nama field | — |
+| `placeholder` | Placeholder text | `Write a message...` |

@@ -4,13 +4,11 @@ sidebar_position: 4
 
 # Dropdown
 
-Menu dropdown yang dapat dikomposisi.
+Menu dropdown yang dapat dikomposisi. Gunakan bersama komponen `laraliveui:menu` untuk daftar item.
 
 ```blade
 <laraliveui:dropdown>
-    <laraliveui:dropdown.trigger>
-        <laraliveui:button variant="outline">Menu</laraliveui:button>
-    </laraliveui:dropdown.trigger>
+    <laraliveui:button variant="outline">Menu</laraliveui:button>
 
     <laraliveui:menu>
         <laraliveui:menu.item icon="user">Profile</laraliveui:menu.item>
@@ -21,38 +19,25 @@ Menu dropdown yang dapat dikomposisi.
 </laraliveui:dropdown>
 ```
 
-## Posisi
+## Posisi & Alignment
+
+Gunakan prop `position` dan `align` untuk mengontrol arah dropdown.
 
 ```blade
-<laraliveui:dropdown position="bottom">
-    <laraliveui:dropdown.trigger>
-        <laraliveui:button>Bawah</laraliveui:button>
-    </laraliveui:dropdown.trigger>
-    <laraliveui:menu>...</laraliveui:menu>
+<laraliveui:dropdown position="bottom" align="start">
+    ...
 </laraliveui:dropdown>
 
-<laraliveui:dropdown position="top">
-    <laraliveui:dropdown.trigger>
-        <laraliveui:button>Atas</laraliveui:button>
-    </laraliveui:dropdown.trigger>
-    <laraliveui:menu>...</laraliveui:menu>
+<laraliveui:dropdown position="top" align="end">
+    ...
 </laraliveui:dropdown>
 ```
 
-## Alignment
-
-```blade
-<laraliveui:dropdown align="start">...</laraliveui:dropdown>
-<laraliveui:dropdown align="end">...</laraliveui:dropdown>
-```
-
-## Dropdown dengan Menu Item Ikon
+## Dengan Icon Trigger
 
 ```blade
 <laraliveui:dropdown>
-    <laraliveui:dropdown.trigger>
-        <laraliveui:button icon="ellipsis-horizontal" variant="ghost" />
-    </laraliveui:dropdown.trigger>
+    <laraliveui:button icon="ellipsis-horizontal" variant="ghost" />
 
     <laraliveui:menu>
         <laraliveui:menu.item icon="pencil-square">Edit</laraliveui:menu.item>
@@ -69,3 +54,7 @@ Menu dropdown yang dapat dikomposisi.
 |------|-----------|---------|
 | `position` | Posisi dropdown: `top`, `bottom` | `bottom` |
 | `align` | Alignment: `start`, `end` | `start` |
+
+| Slot | Deskripsi |
+|------|-----------|
+| default | Elemen trigger dan `laraliveui:menu` |

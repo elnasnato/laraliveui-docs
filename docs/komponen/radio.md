@@ -27,9 +27,8 @@ Default Buttons Cards Pills Segmented
 
 ```blade
 <laraliveui:radio.group>
-    <laraliveui:radio name="plan" value="monthly" checked>Monthly - $29</laraliveui:radio>
-    <laraliveui:radio name="plan" value="yearly">Yearly - $290</laraliveui:radio>
-    <laraliveui:radio name="plan" value="lifetime">Lifetime - $999</laraliveui:radio>
+    <laraliveui:radio name="plan" value="monthly" label="Monthly" />
+    <laraliveui:radio name="plan" value="yearly" label="Yearly" />
 </laraliveui:radio.group>
 ```
 
@@ -43,14 +42,10 @@ Default Buttons Cards Pills Segmented
 </laraliveui:radio.group>
 ```
 
-### Group dengan Deskripsi
+## Indicator
 
 ```blade
-<laraliveui:radio.group variant="cards">
-    <laraliveui:radio name="role" value="admin" label="Administrator" description="Akses penuh ke semua fitur" />
-    <laraliveui:radio name="role" value="editor" label="Editor" description="Akses baca dan tulis" />
-    <laraliveui:radio name="role" value="viewer" label="Viewer" description="Hanya akses baca" />
-</laraliveui:radio.group>
+<laraliveui:radio.indicator />
 ```
 
 ## Referensi
@@ -65,10 +60,13 @@ Default Buttons Cards Pills Segmented
 | `label` | Teks label | — |
 | `description` | Teks deskripsi | — |
 | `checked` | Status checked | `false` |
-| `size` | Ukuran | — |
 
 ### `laraliveui:radio.group`
 
 | Prop | Deskripsi |
 |------|-----------|
 | `variant` | Varian untuk semua radio di dalam group |
+
+### `laraliveui:radio.indicator`
+
+Indicator radio. Tidak memiliki props.

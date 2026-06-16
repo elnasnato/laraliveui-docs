@@ -23,7 +23,6 @@ Komponen untuk menampilkan tombol keyboard.
 
 ```blade
 <laraliveui:kbd>Ctrl + C</laraliveui:kbd>
-<laraliveui:kbd>⌘ + Shift + P</laraliveui:kbd>
 ```
 
 ## Referensi
@@ -33,3 +32,4 @@ Komponen untuk menampilkan tombol keyboard.
 | Prop | Deskripsi | Default |
 |------|-----------|---------|
 | `size` | Ukuran: `xs`, `sm`, `md`, `lg` | `md` |
+| `separator` |Pemisah antar tombol | `+` |

@@ -7,14 +7,20 @@ sidebar_position: 29
 Input untuk One-Time Password.
 
 ```blade
-<laraliveui:otp-input name="kode" digits="6" />
-<laraliveui:otp-input name="pin" digits="4" />
+<laraliveui:otp name="kode" length="6" />
+<laraliveui:otp name="pin" length="4" />
+```
+
+## Private Mode
+
+```blade
+<laraliveui:otp name="pin" private length="4" />
 ```
 
 ## OTP Group
 
 ```blade
-<laraliveui:otp.group digits="6">
+<laraliveui:otp.group length="6">
     <laraliveui:otp.input />
     <laraliveui:otp.separator />
     <laraliveui:otp.input />
@@ -27,9 +33,22 @@ Input untuk One-Time Password.
 
 ## Referensi
 
-### `laraliveui:otp-input`
+### `laraliveui:otp`
 
 | Prop | Deskripsi | Default |
 |------|-----------|---------|
 | `name` | Nama field | — |
-| `digits` | Jumlah digit | `6` |
+| `length` | Jumlah digit | `null` |
+| `private` | Mode password (bullets) | `false` |
+
+### `laraliveui:otp.group`
+
+Group input OTP. Tidak memiliki props.
+
+### `laraliveui:otp.input`
+
+Input OTP individual. Tidak memiliki props.
+
+### `laraliveui:otp.separator`
+
+Separator visual antar input. Tidak memiliki props.

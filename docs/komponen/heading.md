@@ -53,8 +53,15 @@ Komponen heading dengan ukuran dan level yang dapat disesuaikan.
 
 ### `laraliveui:subheading`
 
-Subheading untuk mendampingi heading.
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `size` | Ukuran: `sm`, `base`, `lg`, `xl` | `base` |
 
 ### `laraliveui:text`
 
-Teks paragraf biasa.
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `inline` | Render sebagai `<span>` | `false` |
+| `variant` | Varian: `strong`, `subtle` | `null` |
+| `color` | Warna teks | `null` |
+| `size` | Ukuran: `sm`, `base`, `lg`, `xl` | `null` |

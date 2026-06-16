@@ -9,17 +9,47 @@ Komponen chart dan carousel.
 ## Chart
 
 ```blade
-<laraliveui:chart name="penjualan" :data="$chartData" />
+<laraliveui:chart :data="$chartData" />
+<laraliveui:chart type="bar" :data="$data" :height="400" />
 ```
 
-Chart menggunakan library ringan tanpa dependensi eksternal.
+### Referensi
+
+#### `laraliveui:chart`
+
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `type` | Tipe chart: `bar`, `line` | `bar` |
+| `labels` | Array label | `[]` |
+| `datasets` | Array dataset | `[]` |
+| `height` | Tinggi chart (px) | `300` |
 
 ## Carousel
 
 ```blade
 <laraliveui:carousel>
-    <div>Slide 1</div>
-    <div>Slide 2</div>
-    <div>Slide 3</div>
+    <laraliveui:carousel.slide>Slide 1</laraliveui:carousel.slide>
+    <laraliveui:carousel.slide>Slide 2</laraliveui:carousel.slide>
 </laraliveui:carousel>
 ```
+
+### Autoplay
+
+```blade
+<laraliveui:carousel autoplay :interval="5000">
+    <laraliveui:carousel.slide>Slide 1</laraliveui:carousel.slide>
+</laraliveui:carousel>
+```
+
+### Referensi
+
+#### `laraliveui:carousel`
+
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `autoplay` | Putar otomatis | `false` |
+| `interval` | Interval autoplay (ms) | `3000` |
+
+#### `laraliveui:carousel.slide`
+
+Slide carousel. Tidak memiliki props.

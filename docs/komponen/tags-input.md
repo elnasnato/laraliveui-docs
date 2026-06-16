@@ -28,13 +28,6 @@ Komponen input untuk menambahkan tag dengan enter.
 <laraliveui:tags-input name="tags" allow-duplicates />
 ```
 
-## Ukuran
-
-```blade
-<laraliveui:tags-input name="tags" size="sm" />
-<laraliveui:tags-input name="tags" size="xs" />
-```
-
 ## Referensi
 
 ### `laraliveui:tags-input`
@@ -43,8 +36,5 @@ Komponen input untuk menambahkan tag dengan enter.
 |------|-----------|---------|
 | `name` | Nama field (dari wire:model) | — |
 | `placeholder` | Teks placeholder | `Type and press enter...` |
-| `max` | Maximum jumlah tag | — |
+| `max` | Maximum jumlah tag | `null` |
 | `allow-duplicates` | Izinkan tag duplikat | `false` |
-| `invalid` | Tampilkan state error | `null` |
-| `variant` | Variant: `outline` | `outline` |
-| `size` | Ukuran: `base`, `sm`, `xs` | — |

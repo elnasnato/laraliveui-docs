@@ -10,6 +10,7 @@ Komponen kalender untuk memilih tanggal.
 
 ```blade
 <laraliveui:calendar />
+<laraliveui:calendar selected="2024-06-15" />
 ```
 
 ## Referensi
@@ -18,4 +19,15 @@ Komponen kalender untuk memilih tanggal.
 
 | Prop | Deskripsi |
 |------|-----------|
-| `name` | Nama field |
+| `month` | Bulan (1-12) |
+| `year` | Tahun |
+| `selected` | Tanggal yang dipilih |
+
+### `laraliveui:date-picker`
+
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `name` | Nama field (dari wire:model) | — |
+| `placeholder` | Teks placeholder | `Pick a date` |
+| `invalid` | Tampilkan state error | `null` |
+| `size` | Ukuran: `base`, `sm`, `xs` | `null` |

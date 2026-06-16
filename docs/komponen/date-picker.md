@@ -32,4 +32,4 @@ Komponen untuk memilih tanggal melalui kalender dropdown.
 | `name` | Nama field (dari wire:model) | — |
 | `placeholder` | Teks placeholder | `Pick a date` |
 | `invalid` | Tampilkan state error | `null` |
-| `size` | Ukuran: `base`, `sm`, `xs` | — |
+| `size` | Ukuran: `base`, `sm`, `xs` | `null` |

@@ -16,40 +16,19 @@ Komponen untuk mengulang grup field form secara dinamis.
 ## Minimum & Maximum
 
 ```blade
-<laraliveui:repeater name="items" :min="1" :max="5">
+<laraliveui:repeater name="items" :min-items="1" :max-items="5">
     <laraliveui:input name="item" />
 </laraliveui:repeater>
 ```
 
-## Label Kustom
+## Add Label Kustom
 
 ```blade
 <laraliveui:repeater
     name="items"
     add-label="Tambah item"
-    remove-label="Hapus"
 >
     <laraliveui:input name="value" />
-</laraliveui:repeater>
-```
-
-## Button Kustom
-
-```blade
-<laraliveui:repeater name="items">
-    <laraliveui:input name="value" />
-    <laraliveui:slot name="create-button">
-        <laraliveui:button variant="primary">Tambah Baru</laraliveui:button>
-    </laraliveui:slot>
-</laraliveui:repeater>
-```
-
-## Default Item
-
-```blade
-<laraliveui:repeater name="items" default-item='{"name": "", "qty": 1}'>
-    <laraliveui:input name="name" />
-    <laraliveui:input name="qty" type="number" />
 </laraliveui:repeater>
 ```
 
@@ -60,9 +39,6 @@ Komponen untuk mengulang grup field form secara dinamis.
 | Prop | Deskripsi | Default |
 |------|-----------|---------|
 | `name` | Nama field (dari wire:model) | — |
-| `min` | Minimum item | `0` |
-| `max` | Maximum item | — |
-| `add-label` | Label tombol tambah | `Add item` |
-| `remove-label` | Label tombol hapus | `Remove` |
-| `default-item` | Default value item baru | `{}` |
-| `create-button` | Slot tombol tambah kustom | — |
+| `min-items` | Minimum item | `0` |
+| `max-items` | Maximum item | `0` |
+| `add-label` | Label tombol tambah | `null` |

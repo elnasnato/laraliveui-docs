@@ -7,37 +7,27 @@ sidebar_position: 33
 Wrapper untuk input dengan label, deskripsi, dan error.
 
 ```blade
-<laraliveui:field name="email" label="Email" hint="Kami tidak akan membagikan email Anda" error="Email tidak valid">
+<laraliveui:field name="email" label="Email">
     <laraliveui:input name="email" placeholder="your@email.com" />
 </laraliveui:field>
 ```
 
-## Props pada Field
-
-Semua form input (input, select, textarea, dll) mendukung props field secara langsung:
+## Inline
 
 ```blade
-<laraliveui:input
-    name="email"
-    label="Email"
-    placeholder="your@email.com"
-    description="Kami tidak akan membagikan email Anda"
-    error="Email tidak valid"
-    badge="Wajib"
-/>
+<laraliveui:field variant="inline" name="notif" label="Notifikasi">
+    <laraliveui:switch name="notif" />
+</laraliveui:field>
 ```
 
-### Props Field
+## Referensi
 
-| Prop | Deskripsi |
+### `laraliveui:field`
+
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `variant` | Varian: `block`, `bare`, `inline` | `block` |
+
+| Slot | Deskripsi |
 |------|-----------|
-| `label` | Label field |
-| `description` | Teks deskripsi |
-| `description:trailing` | Deskripsi trailing |
-| `error` | Pesan error |
-| `error:name` | Nama untuk error lookup |
-| `error:bag` | Error bag |
-| `badge` | Badge pada label |
-| `label:badge` | Badge label |
-| `label:aside` | Konten aside pada label |
-| `label:trailing` | Konten trailing pada label |
+| default | Konten field (label, input, error, dll) |

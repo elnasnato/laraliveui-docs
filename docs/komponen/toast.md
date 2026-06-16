@@ -55,3 +55,7 @@ Untuk beberapa toast bersamaan:
 | Prop | Deskripsi | Default |
 |------|-----------|---------|
 | `position` | Posisi: `bottom end`, `top end`, `bottom start`, `top start` | `bottom end` |
+
+### `laraliveui:toast.group`
+
+Group untuk multiple toast. Tidak memiliki props.

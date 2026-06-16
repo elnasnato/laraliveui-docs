@@ -46,15 +46,15 @@ Kontrol modal langsung dari Livewire:
 ```php
 // Buka modal
 $this->modal('confirm')->show();
-Flux::modal('confirm')->show(); // global
+Laraliveui::modal('confirm')->show();
 
 // Tutup modal
 $this->modal('confirm')->close();
-Flux::modal('confirm')->close();
+Laraliveui::modal('confirm')->close();
 
 // Tutup semua modal
 $this->modals()->close();
-Flux::modals()->close();
+Laraliveui::modals()->close();
 ```
 
 ## JavaScript Methods
@@ -62,17 +62,17 @@ Flux::modals()->close();
 Kontrol modal dari Alpine.js:
 
 ```blade
-<button x-on:click="$flux.modal('confirm').show()">Buka</button>
-<button x-on:click="$flux.modal('confirm').close()">Tutup</button>
-<button x-on:click="$flux.modals().close()">Tutup Semua</button>
+<button x-on:click="$laraliveui.modal('confirm').show()">Buka</button>
+<button x-on:click="$laraliveui.modal('confirm').close()">Tutup</button>
+<button x-on:click="$laraliveui.modals().close()">Tutup Semua</button>
 ```
 
 Atau dari JavaScript global:
 
 ```js
-Flux.modal('confirm').show();
-Flux.modal('confirm').close();
-Flux.modals().close();
+Laraliveui.modal('confirm').show();
+Laraliveui.modal('confirm').close();
+Laraliveui.modals().close();
 ```
 
 ## Data Binding

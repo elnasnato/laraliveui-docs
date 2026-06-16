@@ -9,19 +9,20 @@ Komponen papan Kanban untuk workflow manajemen tugas.
 ```blade
 <laraliveui:kanban>
     <laraliveui:kanban.column title="To Do">
-        <laraliveui:kanban.card title="Task 1" description="Deskripsi task" />
-        <laraliveui:kanban.card title="Task 2" description="Deskripsi task" />
+        <laraliveui:kanban.card>Task 1</laraliveui:kanban.card>
+        <laraliveui:kanban.card>Task 2</laraliveui:kanban.card>
     </laraliveui:kanban.column>
     <laraliveui:kanban.column title="In Progress">
-        <laraliveui:kanban.card title="Task 3" description="Sedang dikerjakan" />
-    </laraliveui:kanban.column>
-    <laraliveui:kanban.column title="Done">
-        <laraliveui:kanban.card title="Task 4" description="Selesai" />
+        <laraliveui:kanban.card>Task 3</laraliveui:kanban.card>
     </laraliveui:kanban.column>
 </laraliveui:kanban>
 ```
 
 ## Referensi
+
+### `laraliveui:kanban`
+
+Container kanban. Tidak memiliki props.
 
 ### `laraliveui:kanban.column`
 
@@ -31,7 +32,6 @@ Komponen papan Kanban untuk workflow manajemen tugas.
 
 ### `laraliveui:kanban.card`
 
-| Prop | Deskripsi |
-|------|-----------|
-| `title` | Judul card |
-| `description` | Deskripsi card |
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `draggable` | Izinkan drag | `true` |

@@ -27,12 +27,6 @@ Komponen textarea untuk input teks multi-baris.
 <laraliveui:textarea name="bio" resize="horizontal" />
 ```
 
-## Dengan Label & Error
-
-```blade
-<laraliveui:textarea name="alamat" label="Alamat" error="Alamat harus diisi" />
-```
-
 ## Referensi
 
 ### `laraliveui:textarea`
@@ -41,7 +35,5 @@ Komponen textarea untuk input teks multi-baris.
 |------|-----------|---------|
 | `name` | Nama field | `wire:model` pertama |
 | `rows` | Jumlah baris | `4` |
-| `resize` | Arah resize: `vertical`, `none`, `both`, `horizontal` | `vertical` |
-| `invalid` | Tandai sebagai invalid | — |
-| `label` | Label (via with-field) | — |
-| `error` | Pesan error (via with-field) | — |
+| `resize` | Arah resize | `vertical` |
+| `invalid` | Tandai sebagai invalid | `null` |

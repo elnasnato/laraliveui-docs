@@ -26,14 +26,8 @@ Komponen untuk menampilkan pasangan key-value.
 
 ```blade
 <laraliveui:key-value>
-    <div>
-        <dt class="text-sm font-medium text-zinc-500">Nama</dt>
-        <dd class="text-sm text-zinc-800 dark:text-white">John Doe</dd>
-    </div>
-    <div>
-        <dt class="text-sm font-medium text-zinc-500">Email</dt>
-        <dd class="text-sm text-zinc-800 dark:text-white">john@example.com</dd>
-    </div>
+    <dt>Nama</dt>
+    <dd>John Doe</dd>
 </laraliveui:key-value>
 ```
 

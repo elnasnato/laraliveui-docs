@@ -7,14 +7,25 @@ sidebar_position: 26
 Indikator progress bar.
 
 ```blade
-<laraliveui:progress :value="$progress" />
-<laraliveui:progress :value="75" />
+<laraliveui:progress />
 ```
 
-## Dengan Label
+Gunakan CSS variable `--laraliveui-progress-percentage` untuk mengatur nilai progress:
 
 ```blade
-<laraliveui:progress :value="75" show-label />
+<div style="--laraliveui-progress-percentage: 75%">
+    <laraliveui:progress />
+</div>
+```
+
+## Warna
+
+```blade
+<div style="--laraliveui-progress-percentage: 60%">
+    <laraliveui:progress color="red" />
+    <laraliveui:progress color="blue" />
+    <laraliveui:progress color="green" />
+</div>
 ```
 
 ## Referensi
@@ -23,6 +34,6 @@ Indikator progress bar.
 
 | Prop | Deskripsi |
 |------|-----------|
-| `value` | Nilai progress (0-100) |
-| `show-label` | Tampilkan persentase |
-| `variant` | Varian warna |
+| `color` | Warna progress: `red`, `green`, `blue`, `amber`, dll |
+
+Gunakan CSS variable `--laraliveui-progress-percentage` pada parent untuk mengatur nilai.

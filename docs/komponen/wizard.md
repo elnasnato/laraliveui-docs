@@ -38,7 +38,6 @@ Komponen multi-step wizard dengan navigasi dan progress bar.
 ```blade
 <laraliveui:wizard :show-steps="false">
     <laraliveui:wizard.step name="Step 1">...</laraliveui:wizard.step>
-    <laraliveui:wizard.step name="Step 2">...</laraliveui:wizard.step>
 </laraliveui:wizard>
 ```
 
@@ -48,7 +47,6 @@ Komponen multi-step wizard dengan navigasi dan progress bar.
 <laraliveui:wizard :current-step="1">
     <laraliveui:wizard.step name="Step 1">...</laraliveui:wizard.step>
     <laraliveui:wizard.step name="Step 2">...</laraliveui:wizard.step>
-    <laraliveui:wizard.step name="Step 3">...</laraliveui:wizard.step>
 </laraliveui:wizard>
 ```
 

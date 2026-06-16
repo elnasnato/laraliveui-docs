@@ -15,8 +15,8 @@ Upload file dengan drag & drop.
 
 ### `laraliveui:file-upload`
 
-| Prop | Deskripsi |
-|------|-----------|
-| `name` | Nama field |
-| `accept` | Tipe file yang diterima |
-| `multiple` | Izinkan multiple files |
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `name` | Nama field | — |
+| `accept` | Tipe file yang diterima | `null` |
+| `multiple` | Izinkan multiple files | `false` |

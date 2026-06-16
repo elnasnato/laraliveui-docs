@@ -10,17 +10,13 @@ Komponen tabel yang fleksibel dengan sub-komponen untuk columns, rows, cell, dan
 <laraliveui:table>
     <laraliveui:table.columns>
         <laraliveui:table.column label="Nama" sortable />
-        <laraliveui:table.column label="Email" sortable />
-        <laraliveui:table.column label="Role" />
+        <laraliveui:table.column label="Email" />
         <laraliveui:table.column label="Aksi" align="right" />
     </laraliveui:table.columns>
     <laraliveui:table.rows>
         <laraliveui:table.row>
             <laraliveui:table.cell>John Doe</laraliveui:table.cell>
             <laraliveui:table.cell>john@example.com</laraliveui:table.cell>
-            <laraliveui:table.cell>
-                <laraliveui:badge>Admin</laraliveui:badge>
-            </laraliveui:table.cell>
             <laraliveui:table.cell align="right">
                 <laraliveui:button size="sm">Edit</laraliveui:button>
             </laraliveui:table.cell>
@@ -32,36 +28,19 @@ Komponen tabel yang fleksibel dengan sub-komponen untuk columns, rows, cell, dan
 ## Hover & Striped
 
 ```blade
-<laraliveui:table>
-    <laraliveui:table.columns sticky>
-        <laraliveui:table.column label="Nama" />
-        <laraliveui:table.column label="Email" />
-    </laraliveui:table.columns>
-    <laraliveui:table.rows hover>
-        <laraliveui:table.row hover striped>...</laraliveui:table.row>
-    </laraliveui:table.rows>
-</laraliveui:table>
+<laraliveui:table.rows hover striped>
+    <laraliveui:table.row>
+        <laraliveui:table.cell>Data</laraliveui:table.cell>
+    </laraliveui:table.row>
+</laraliveui:table.rows>
 ```
 
 ## Sortable
 
 ```blade
-<laraliveui:table>
-    <laraliveui:table.columns>
-        <laraliveui:table.column label="Nama" sortable />
-    </laraliveui:table.columns>
-    <laraliveui:table.rows>
-        @foreach ($users as $user)
-            <laraliveui:table.row>
-                <laraliveui:table.cell>
-                    <laraliveui:table.sortable direction="asc">
-                        {{ $user->name }}
-                    </laraliveui:table.sortable>
-                </laraliveui:table.cell>
-            </laraliveui:table.row>
-        @endforeach
-    </laraliveui:table.rows>
-</laraliveui:table>
+<laraliveui:table.columns>
+    <laraliveui:table.column label="Nama" sortable />
+</laraliveui:table.columns>
 ```
 
 ## Sticky Header
@@ -72,27 +51,18 @@ Komponen tabel yang fleksibel dengan sub-komponen untuk columns, rows, cell, dan
 </laraliveui:table.columns>
 ```
 
-## Lebar Kolom
-
-```blade
-<laraliveui:table.column label="Nama" width="200px" />
-```
-
 ## Alignment
 
 ```blade
 <laraliveui:table.column label="Aksi" align="right" />
 <laraliveui:table.cell align="center">Konten</laraliveui:table.cell>
-<laraliveui:table.cell align="right">Rp 100.000</laraliveui:table.cell>
 ```
 
 ## Referensi
 
 ### `laraliveui:table`
 
-| Prop | Deskripsi | Default |
-|------|-----------|---------|
-| `name` | Nama tabel | — |
+Container tabel.
 
 ### `laraliveui:table.columns`
 

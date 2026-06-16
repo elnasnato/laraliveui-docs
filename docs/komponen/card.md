@@ -28,9 +28,7 @@ Komponen kartu untuk menampung konten dalam wadah yang terstruktur.
         <laraliveui:heading size="lg">Judul Card</laraliveui:heading>
         <laraliveui:subheading>Deskripsi card</laraliveui:subheading>
     </laraliveui:card.header>
-    <laraliveui:card.content>
-        Konten utama card di sini.
-    </laraliveui:card.content>
+    Konten utama card di sini.
     <laraliveui:card.footer>
         <laraliveui:button variant="primary">Simpan</laraliveui:button>
     </laraliveui:card.footer>
@@ -48,3 +46,19 @@ Komponen kartu untuk menampung konten dalam wadah yang terstruktur.
 | Slot | Deskripsi |
 |------|-----------|
 | default | Konten utama card |
+
+### `laraliveui:card.header`
+
+Header card. Tidak memiliki props.
+
+### `laraliveui:card.footer`
+
+Footer card. Tidak memiliki props.
+
+### `laraliveui:card.media`
+
+Media card. Tidak memiliki props.
+
+### `laraliveui:card.group`
+
+Group card. Tidak memiliki props.

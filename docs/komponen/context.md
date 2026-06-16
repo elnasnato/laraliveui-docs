@@ -14,3 +14,11 @@ Menu konteks yang muncul saat klik kanan.
     </laraliveui:menu>
 </laraliveui:context>
 ```
+
+## Referensi
+
+### `laraliveui:context`
+
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `placement` | Posisi menu: `bottom-start`, `bottom-end`, `top-start`, `top-end` | `bottom-start` |

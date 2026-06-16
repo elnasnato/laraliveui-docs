@@ -2,78 +2,78 @@
 sidebar_position: 43
 ---
 
-# Alert / Error / Label / Legend / Description
+# Field Utilities
 
 Komponen utilitas untuk form.
 
-## Alert
+## Field
+
+Wrapper untuk input dengan label, deskripsi, dan error.
 
 ```blade
-<laraliveui:alert variant="success" dismissible>
-    Data berhasil disimpan!
-</laraliveui:alert>
-
-<laraliveui:alert variant="danger">
-    Terjadi kesalahan!
-</laraliveui:alert>
-
-<laraliveui:alert variant="warning">
-    Periksa kembali input Anda.
-</laraliveui:alert>
-
-<laraliveui:alert variant="info">
-    Info: Maintenance pada pukul 22:00.
-</laraliveui:alert>
+<laraliveui:field name="email" label="Email">
+    <laraliveui:input name="email" placeholder="your@email.com" />
+</laraliveui:field>
 ```
 
-## Error
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `variant` | Varian: `block`, `bare`, `inline` | `block` |
 
-Menampilkan error untuk field tertentu:
+## Label
 
 ```blade
-<laraliveui:error name="email" />
-<laraliveui:error :name="$field" :bag="$bag" />
+<laraliveui:label>Email</laraliveui:label>
+<laraliveui:label badge="Wajib">Email</laraliveui:label>
 ```
 
 | Prop | Deskripsi |
 |------|-----------|
-| `name` | Nama field |
-| `bag` | Error bag |
-| `message` | Pesan kustom |
-| `icon` | Tampilkan ikon |
-| `nested` | Cari error nested |
-| `deep` | Cari error deep |
-
-## Label
-
-Label standalone:
-
-```blade
-<laraliveui:label for="email">Email</laraliveui:label>
-```
-
-## Legend
-
-Legend untuk fieldset:
-
-```blade
-<laraliveui:legend>Informasi Pribadi</laraliveui:legend>
-```
+| `badge` | Badge pada label |
+| `aside` | Konten aside pada label |
+| `trailing` | Konten trailing pada label |
 
 ## Description
-
-Deskripsi untuk field:
 
 ```blade
 <laraliveui:description>Kami tidak akan membagikan email Anda.</laraliveui:description>
 ```
 
+Tidak memiliki props.
+
+## Error
+
+```blade
+<laraliveui:error name="email" />
+```
+
+| Prop | Deskripsi | Default |
+|------|-----------|---------|
+| `name` | Nama field | `null` |
+| `bag` | Error bag | `default` |
+| `message` | Pesan kustom | `null` |
+| `icon` | Nama ikon | `exclamation-triangle` |
+| `nested` | Cari error nested | `true` |
+| `deep` | Cari error deep | `true` |
+
+## Legend
+
+```blade
+<laraliveui:legend>Informasi Pribadi</laraliveui:legend>
+```
+
+Tidak memiliki props.
+
 ## Fieldset
 
 ```blade
-<laraliveui:fieldset>
-    <laraliveui:legend>Data Diri</laraliveui:legend>
+<laraliveui:fieldset legend="Data Diri">
     <laraliveui:input name="nama" label="Nama" />
     <laraliveui:input name="email" label="Email" />
 </laraliveui:fieldset>
 ```
+
+| Prop | Deskripsi |
+|------|-----------|
+| `legend` | Teks legend |
+| `description` | Teks deskripsi |

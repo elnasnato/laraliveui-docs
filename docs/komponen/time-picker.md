@@ -41,6 +41,6 @@ Atur interval menit dengan prop `interval`.
 | `name` | Nama field (dari wire:model) | — |
 | `placeholder` | Teks placeholder | `Pick a time` |
 | `invalid` | Tampilkan state error | `null` |
-| `size` | Ukuran: `base`, `sm`, `xs` | — |
+| `size` | Ukuran: `base`, `sm`, `xs` | `null` |
 | `interval` | Interval menit | `30` |
 | `format` | Format waktu: `12h`, `24h` | `12h` |

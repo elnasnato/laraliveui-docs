@@ -44,6 +44,6 @@ Atur posisi awal slider (dalam persen).
 |------|-----------|---------|
 | `before` | URL gambar sebelum | — |
 | `after` | URL gambar sesudah | — |
-| `before-label` | Label gambar sebelum | — |
-| `after-label` | Label gambar sesudah | — |
+| `before-label` | Label gambar sebelum | `null` |
+| `after-label` | Label gambar sesudah | `null` |
 | `start-position` | Posisi awal slider (%) | `50` |

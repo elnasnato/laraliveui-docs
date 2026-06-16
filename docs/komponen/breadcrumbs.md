@@ -16,6 +16,14 @@ Navigasi breadcrumb untuk menunjukkan hierarki halaman.
 
 ## Referensi
 
+### `laraliveui:breadcrumbs`
+
+Container breadcrumbs. Tidak memiliki props.
+
+| Slot | Deskripsi |
+|------|-----------|
+| default | Item breadcrumbs |
+
 ### `laraliveui:breadcrumbs.item`
 
 | Prop | Deskripsi |

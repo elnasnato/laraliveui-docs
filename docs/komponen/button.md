@@ -172,7 +172,7 @@ Untuk variant ghost/subtle, gunakan prop `inset` untuk negasi padding.
 | `size` | Ukuran: `base`, `sm`, `xs` | `base` |
 | `color` | Warna untuk variant primary (nama warna Tailwind) | — |
 | `icon` | Nama ikon di awal tombol | — |
-| `icon:variant` | Varian ikon: `outline`, `solid`, `mini`, `micro` | `micro` |
+| `icon:variant` | Varian ikon: `outline`, `solid`, `mini`, `micro` | `mini` (size `xs` → `micro`) |
 | `icon:trailing` | Nama ikon di akhir tombol | — |
 | `icon:class` | CSS class tambahan untuk ikon | — |
 | `icon:leading` | Nama ikon di awal (alternatif) | — |

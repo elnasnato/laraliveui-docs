@@ -10,48 +10,39 @@ Komponen layout untuk struktur halaman yang konsisten.
 
 ```blade
 <laraliveui:layout>
-    <laraliveui:layout.header>
+    <x-slot:header>
         <laraliveui:navbar>
-            <laraliveui:navbar.brand>My App</laraliveui:navbar.brand>
+            <laraliveui:navbar.item href="/">My App</laraliveui:navbar.item>
         </laraliveui:navbar>
-    </laraliveui:layout.header>
+    </x-slot:header>
 
-    <laraliveui:layout.sidebar>
+    <x-slot:sidebar>
         <laraliveui:navlist>
             <laraliveui:navlist.item href="/" icon="home">Dashboard</laraliveui:navlist.item>
-            <laraliveui:navlist.item href="/users" icon="users">Pengguna</laraliveui:navlist.item>
         </laraliveui:navlist>
-    </laraliveui:layout.sidebar>
+    </x-slot:sidebar>
 
-    <laraliveui:layout.main>
-        @yield('content')
-    </laraliveui:layout.main>
-
-    <laraliveui:layout.footer>
-        &copy; 2024 My App
-    </laraliveui:layout.footer>
+    <x-slot:main>
+        Konten utama
+    </x-slot:main>
 </laraliveui:layout>
 ```
 
-## Sidebar
+## Sub-komponen Layout
 
-Sidebar yang responsif dengan berbagai sub-komponen:
+Layout terdiri dari beberapa sub-komponen:
+
+- `laraliveui:layout.header` — Header layout
+- `laraliveui:layout.sidebar` — Sidebar layout
+- `laraliveui:layout.main` — Konten utama
+- `laraliveui:layout.footer` — Footer layout
+
+## Container
 
 ```blade
-<laraliveui:sidebar>
-    <laraliveui:sidebar.brand>My App</laraliveui:sidebar.brand>
-    <laraliveui:sidebar.search />
-    <laraliveui:sidebar.nav>
-        <laraliveui:sidebar.item href="/" icon="home">Dashboard</laraliveui:sidebar.item>
-    </laraliveui:sidebar.nav>
-    <laraliveui:sidebar.group heading="Pengaturan">
-        <laraliveui:sidebar.item href="/settings" icon="cog-6-tooth">Settings</laraliveui:sidebar.item>
-    </laraliveui:sidebar.group>
-    <laraliveui:sidebar.spacer />
-    <laraliveui:sidebar.profile />
-    <laraliveui:sidebar.collapse />
-    <laraliveui:sidebar.toggle />
-</laraliveui:sidebar>
+<laraliveui:container>
+    Konten dengan max-width yang terbatas.
+</laraliveui:container>
 ```
 
 ## Spacer
@@ -70,25 +61,23 @@ Gunakan untuk mendorong konten ke kanan dalam flex container:
 </div>
 ```
 
-## Container
-
-```blade
-<laraliveui:container>
-    Konten dengan max-width yang terbatas.
-</laraliveui:container>
-```
-
-## Aside
-
-```blade
-<laraliveui:aside>
-    Konten sidebar tambahan.
-</laraliveui:aside>
-```
-
 ## Referensi
 
+### `laraliveui:container`
+
+Container dengan max-width. Tidak memiliki props.
+
+### `laraliveui:spacer`
+
+Spacer fleksibel. Tidak memiliki props.
+
+### `laraliveui:header`
+
+Header layout. Tidak memiliki props.
+
 ### `laraliveui:sidebar`
+
+Sidebar layout.
 
 | Sub-komponen | Deskripsi |
 |-------------|-----------|
@@ -103,3 +92,11 @@ Gunakan untuk mendorong konten ke kanan dalam flex container:
 | `sidebar.spacer` | Spacer fleksibel |
 | `sidebar.header` | Header khusus sidebar |
 | `sidebar.backdrop` | Backdrop untuk mobile |
+
+### `laraliveui:main`
+
+Konten utama layout. Tidak memiliki props.
+
+### `laraliveui:footer`
+
+Footer layout. Tidak memiliki props.

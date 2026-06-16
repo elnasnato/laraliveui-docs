@@ -37,19 +37,12 @@ Default Buttons Cards Pills
 />
 ```
 
-## Dengan Ikon (Buttons variant)
-
-```blade
-<laraliveui:checkbox name="filter" label="Filter" icon="funnel" variant="buttons" />
-```
-
 ## Checkbox Group
 
 ```blade
 <laraliveui:checkbox.group>
-    <laraliveui:checkbox name="a" checked>Item A</laraliveui:checkbox>
-    <laraliveui:checkbox name="b">Item B</laraliveui:checkbox>
-    <laraliveui:checkbox name="c">Item C</laraliveui:checkbox>
+    <laraliveui:checkbox name="a" label="Item A" />
+    <laraliveui:checkbox name="b" label="Item B" />
 </laraliveui:checkbox.group>
 ```
 
@@ -58,7 +51,6 @@ Default Buttons Cards Pills
 ```blade
 <laraliveui:checkbox.group variant="buttons">
     <laraliveui:checkbox name="a" label="A" />
-    <laraliveui:checkbox name="b" label="B" />
 </laraliveui:checkbox.group>
 ```
 
@@ -66,10 +58,18 @@ Default Buttons Cards Pills
 
 ```blade
 <laraliveui:checkbox.all>
-    <laraliveui:checkbox name="a">Item A</laraliveui:checkbox>
-    <laraliveui:checkbox name="b">Item B</laraliveui:checkbox>
+    <laraliveui:checkbox name="a" label="Item A" />
+    <laraliveui:checkbox name="b" label="Item B" />
 </laraliveui:checkbox.all>
 ```
+
+## Indicator
+
+```blade
+<laraliveui:checkbox.indicator />
+```
+
+Gunakan di dalam checkbox untuk custom styling.
 
 ## Referensi
 
@@ -82,13 +82,17 @@ Default Buttons Cards Pills
 | `label` | Teks label | — |
 | `description` | Teks deskripsi | — |
 | `checked` | Status checked | `false` |
-| `icon` | Ikon (variant buttons) | — |
-| `size` | Ukuran (variant buttons) | — |
-| `indicator` | Tampilkan indikator | — |
-| `accent` | Warna aksen | — |
 
 ### `laraliveui:checkbox.group`
 
 | Prop | Deskripsi |
 |------|-----------|
 | `variant` | Varian untuk semua checkbox di dalam group |
+
+### `laraliveui:checkbox.all`
+
+Check all untuk group. Tidak memiliki props.
+
+### `laraliveui:checkbox.indicator`
+
+Indicator checkbox. Tidak memiliki props.
